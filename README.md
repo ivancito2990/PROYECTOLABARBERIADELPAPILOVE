@@ -34,7 +34,7 @@ git commit -m "Initial deliverable with HTML, Sass, responsive styles, and acces
 ```
 
 ## Enlaces de entrega
-- Repositorio GitHub: `REPO_URL_A_AÑADIR`
+- Repositorio GitHub: `https://github.com/ivancito2990/proyectobarber`
 - Sitio desplegado: `DEPLOY_URL_A_AÑADIR`
 
-> Nota: Se creó el repositorio local. Agregar el remote de GitHub y desplegar en Vercel/Netlify para completar la entrega.
+> Nota: El proyecto está publicado en GitHub. Conectar este repositorio a Netlify o Vercel para desplegarlo en vivo.

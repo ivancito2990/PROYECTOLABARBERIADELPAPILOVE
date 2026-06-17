@@ -1,0 +1,12 @@
+{
+  "name": "proyectobarber",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "sass": "^1.75.0"
+  },
+  "scripts": {
+    "build:css": "sass sass/style.scss css/main.css",
+    "build": "npm run build:css"
+  }
+}
