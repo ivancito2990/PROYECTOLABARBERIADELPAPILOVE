@@ -1,0 +1,26 @@
+﻿@use 'variables' as *;
+@mixin respond($max-width) {
+  @media (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%panel-card {
+  background: rgba(8, 8, 8, 0.72);
+  border: 1px solid $border-soft;
+  border-radius: $radius;
+  box-shadow: $shadow;
+}
+
+@mixin card {
+  background: rgba(3, 3, 3, 0.72);
+  border: 1px solid $border-soft;
+  border-radius: $radius;
+  box-shadow: $shadow;
+}

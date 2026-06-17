@@ -1,0 +1,16 @@
+﻿@use 'variables' as *;
+@use 'mixins' as *;
+
+.page-section {
+  padding: 48px 0;
+}
+
+.page-section--tight {
+  padding: 32px 0;
+}
+
+.page-panel {
+  @extend %panel-card;
+  padding: 28px;
+  border-radius: $radius;
+}

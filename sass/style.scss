@@ -1,0 +1,38 @@
+// Sass principal: importa parciales y ejemplo de nesting
+
+/* CSS generado desde Sass principal */
+
+@use './partials/reset';
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+@use './partials/base';
+@use './partials/layout';
+@use './partials/headerfooter';
+@use './partials/components';
+@use './partials/mediaq';
+@use './partials/pages';
+
+@use './partials/index';
+@use './partials/nosotros';
+@use './partials/servicios';
+@use './partials/galeria';
+@use './partials/sucursal';
+
+//Nesting
+
+// Ejemplo Nesting en style.scss
+body {
+  .presentacion {
+    .divone {
+      h1 {
+        font-size: clamp(2.8rem, 6vw, 4.2rem);
+      }
+
+      p {
+        margin-top: 1rem;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+

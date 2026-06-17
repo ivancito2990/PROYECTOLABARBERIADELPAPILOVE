@@ -1,0 +1,9 @@
+# Generated files
+css/main.css
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules
+node_modules/

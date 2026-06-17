@@ -1,0 +1,45 @@
+﻿@use 'variables' as *;
+@use 'mixins' as *;
+
+.titulos {
+  text-align: center;
+  padding: 42px 0 16px;
+}
+
+.titulos .parrafo {
+  max-width: 760px;
+  margin: 0 auto 24px;
+  color: rgba(245, 245, 245, 0.92);
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.75;
+}
+
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 22px;
+  padding: 0 24px 48px;
+}
+
+.caja-servicios {
+  @extend %panel-card;
+  padding: 24px;
+  text-align: center;
+}
+
+.caja-servicios h2 {
+  margin: 0 0 12px;
+  font-size: 1.5rem;
+}
+
+.caja-servicios p {
+  margin: 0;
+  color: $text-muted;
+}
+
+@include respond(760px) {
+  .servicios {
+    grid-template-columns: 1fr;
+    padding: 0 16px 36px;
+  }
+}

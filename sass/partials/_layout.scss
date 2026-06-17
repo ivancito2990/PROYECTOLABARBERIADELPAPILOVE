@@ -1,0 +1,14 @@
+﻿@use 'variables' as *;
+@use 'mixins' as *;
+
+.container {
+  width: min(100%, $max-width);
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+main {
+  width: min(100%, $max-width);
+  margin: 0 auto;
+  padding: $container-padding 0 96px;
+}

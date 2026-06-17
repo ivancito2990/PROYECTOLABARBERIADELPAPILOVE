@@ -1,0 +1,14 @@
+﻿@use 'variables' as *;
+@use 'mixins' as *;
+
+@include respond($breakpoint-md) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@include respond($breakpoint-sm) {
+  .section-title {
+    font-size: clamp(2rem, 8vw, 2.6rem);
+  }
+}

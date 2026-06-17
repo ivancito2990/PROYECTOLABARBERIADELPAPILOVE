@@ -1,0 +1,43 @@
+﻿@use 'variables' as *;
+@use 'mixins' as *;
+
+.presentacion {
+  min-height: calc(100vh - 210px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.divone {
+  width: min(760px, 100%);
+  padding: 32px;
+  background: rgba(0, 0, 0, 0.72);
+  border-radius: 28px;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+.titulo {
+  margin: 0;
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
+}
+
+.subtitulo {
+  margin: 1rem 0 1.5rem;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.divone p {
+  margin: 0;
+  color: rgba(245, 245, 245, 0.92);
+  font-size: clamp(1rem, 2.2vw, 1.15rem);
+  line-height: 1.8;
+}
+
+@include respond(760px) {
+  .presentacion {
+    min-height: auto;
+    padding: 28px 0;
+  }
+}

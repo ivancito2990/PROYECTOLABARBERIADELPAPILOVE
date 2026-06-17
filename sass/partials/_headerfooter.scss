@@ -1,0 +1,150 @@
+﻿@use 'variables' as *;
+@use 'mixins' as *;
+
+/*HEADER*/
+
+header {
+  @include flex-center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 18px $container-padding;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid $border-soft;
+}
+
+header img {
+  width: 180px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.titu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.titu a {
+  @include flex-center;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  color: $text-light;
+}
+
+.titu a:hover,
+.titu a:focus {
+  background: $bg-accent;
+  transform: translateY(-2px);
+}
+
+
+/* FOOTER*/
+
+
+footer {
+  @include flex-center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 22px $container-padding;
+  background: rgba(0, 0, 0, 0.72);
+  border-top: 1px solid $border-soft;
+}
+
+.footer-left {
+  flex: 1 1 240px;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  color: $text-muted;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  flex: 1 1 260px;
+}
+
+.social-icons img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+.logo-wp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 62px;
+  height: 62px;
+  z-index: 1200;
+  animation: float-wp 3s ease-in-out infinite;
+  transition: transform 0.2s ease;
+}
+
+.logo-wp:hover {
+  transform: scale(1.08);
+}
+
+@keyframes float-wp {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@include respond(768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 18px 16px;
+  }
+
+  .titu {
+    gap: 10px;
+  }
+
+  .titu a {
+    padding: 0.7rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  main {
+    padding: 18px 16px 90px;
+  }
+
+  .logo-wp {
+    width: 52px;
+    height: 52px;
+    right: 16px;
+    bottom: 16px;
+  }
+}
