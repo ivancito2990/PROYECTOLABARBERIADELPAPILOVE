@@ -6,7 +6,8 @@
     "sass": "^1.75.0"
   },
   "scripts": {
-    "build:css": "sass sass/style.scss css/main.css",
-    "build": "npm run build:css"
+    "build:css": "npx sass sass/style.scss css/main.css",
+    "build": "npm run build:css",
+    "watch:css": "npx sass --watch sass/style.scss css/main.css"
   }
 }
