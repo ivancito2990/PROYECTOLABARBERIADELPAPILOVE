@@ -35,6 +35,6 @@ git commit -m "Initial deliverable with HTML, Sass, responsive styles, and acces
 
 ## Enlaces de entrega
 - Repositorio GitHub: `https://github.com/ivancito2990/PROYECTOLABARBERIADELPAPILOVE.git`
-- Sitio desplegado: `DEPLOY_URL_A_AÑADIR`
+- Sitio desplegado: `https://illustrious-smakager-c976e3.netlify.app/`
 
 > Nota: El proyecto está publicado en GitHub. Conectar este repositorio a Netlify o Vercel para desplegarlo en vivo.
